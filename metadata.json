@@ -1,0 +1,6 @@
+{
+  "name": "Saraswathi Cafe | సరస్వతి కేఫే",
+  "description": "Authentic South Indian vegetarian restaurant in Palamaner, Andhra Pradesh. Crispy dosas, fluffy idlis, filter coffee, special thali meals, and seamless online ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

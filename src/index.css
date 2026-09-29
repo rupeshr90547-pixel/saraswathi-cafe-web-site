@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --leaf-primary: #1B4332;
+    --leaf-accent: #2D6A4F;
+    --leaf-light: #52B788;
+    --cream-bg: #FCF9F2;
+    --cream-card: #FFFFFF;
+    --gold-accent: #D4AF37;
+    --gold-dark: #B8860B;
+    --terracotta: #8C3B1E;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FCF9F2;
+    color: #232323;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-telugu {
+    font-family: 'Noto Sans Telugu', system-ui, sans-serif;
+  }
+}
+
+/* Custom South Indian kolam / leaf subtle backgrounds */
+.bg-leaf-pattern {
+  background-color: #1B4332;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.15) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-cream-pattern {
+  background-color: #FCF9F2;
+  background-image: radial-gradient(rgba(45, 106, 79, 0.06) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Temple border styling */
+.temple-border-bottom {
+  position: relative;
+}
+.temple-border-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    45deg,
+    #D4AF37,
+    #D4AF37 6px,
+    #B8860B 6px,
+    #B8860B 12px
+  );
+  opacity: 0.8;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EEDF;
+}
+::-webkit-scrollbar-thumb {
+  background: #A3B18A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D6A4F;
+}
